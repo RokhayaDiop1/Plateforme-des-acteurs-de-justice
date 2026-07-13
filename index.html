@@ -7,6 +7,18 @@
     <link rel="stylesheet" href="src/tailwind.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+<style>
+    .reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+</style>
 
 <body class="bg-[#fffdfd]">
     <div class="flex items-center justify-between md:px-12 px-5  py-0  fixed top-0 right-0 left-0 z-50 bg-gray-100/60 backdrop-blur-xl border-b border-gray-200 " >
@@ -45,7 +57,7 @@
 
     <!-- hero section----------------------------------------------------------------------- -->
     <div class="gap-10  grid grid-cols-1 md:grid-cols-2  w-full  pt-36 md:pt-18 px-5   ">
-        <div class="md:pt-16  md:pl-10  flex  flex-col  ">
+        <div class="reveal md:pt-16  md:pl-10  flex  flex-col  ">
             <div class="lg:py-2 lg:px-8   text-center w-full py-2  border-2 border-[#c8a75a43] rounded-full  text-[14px] md:text-[16px] font-semibold tracking-[0.20em] mb-10">
                 <i class="fa-regular fa-circle-check"></i>
                 La justice accessible à tous au Sénégal
@@ -73,7 +85,7 @@
 
         </div>
 
-        <div class="md:pt-27 flex items-center justify-center">
+        <div class="reveal md:pt-27 flex items-center justify-center">
             <!-- <img src="images/marteau.jpg" class="w-[500px] " alt=""> -->
             <img src="images/marteau-removebg-preview.png" class="w-125 hidden md:flex " alt="">
 
@@ -88,13 +100,13 @@
 
     <div class="pb-20">
         <div class="grid grid-cols-1 md:grid-cols-2 w-full px-10 md:pt-26 p-8  md:pb-22 gap-6">
-            <div class="">
+            <div class="reveal">
                 <h3 class="text-[#1C2E4A] font-bold pb-6">_____  Comment ça marche</h3>
                 <h1 class="text-5xl">Un processus <span class=" text-[#C8A75A]">simple,</span><br>
                     un résultat certain.
                 </h1>
             </div>
-            <div>
+            <div class="reveal">
                 <p class="md:pt-16 pt-6 text-gray-500">
                     YoonLink simplifie l'accès à la justice en éliminant l'incertitude. Notre algorithme analyse votre situation et vous met en relation avec l'expert le plus adapté en quelques minutes.
 
@@ -105,7 +117,7 @@
         <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 px-15 gap-15 text-center   ">
 
 
-            <div class="border border-[#C8A75A] p-6 flex flex-col gap-10 justify-center items-center hover:bg-[#f2f2f2] transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-102">
+            <div class="reveal border border-[#C8A75A] p-6 flex flex-col gap-10 justify-center items-center hover:bg-[#f2f2f2] transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-102">
                 <h1 class="text-6xl font-bold text-[#C8A75A] opacity-50 " >01</h1>
                 <i class="fa-regular fa-message text-2xl text-[#1C2E4A]"></i>
                 <h1 class="text-2xl font-semibold text-[#1C2E4A]">Décrivez votre situation</h1>
@@ -113,14 +125,14 @@
 
             </div>
 
-            <div class="border border-[#C8A75A] p-6 flex flex-col gap-10 justify-center items-center hover:bg-[#f2f2f2] transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-102">
+            <div class="reveal border border-[#C8A75A] p-6 flex flex-col gap-10 justify-center items-center hover:bg-[#f2f2f2] transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-102">
                 <h1 class="text-6xl font-bold text-[#C8A75A] opacity-50 " >02</h1>
                 <i class="fa-solid fa-magnifying-glass text-2xl text-[#1C2E4A]"></i>
                 <h1 class="text-2xl font-semibold text-[#1C2E4A]">Soyez orienté automatiquement</h1>
                 <p class="text-gray-600">YoonLink vous recommande le bon type d'expert (avocat, notaire, médiateur…) et les professionnels les mieux adaptés.</p>
 
             </div>
-            <div class="border border-[#C8A75A] p-6 flex flex-col gap-10  justify-center items-center hover:bg-[#f2f2f2] transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-102">
+            <div class="reveal border border-[#C8A75A] p-6 flex flex-col gap-10  justify-center items-center hover:bg-[#f2f2f2] transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-102">
                 <h1 class="text-6xl font-bold text-[#C8A75A] opacity-50 " >03</h1>
                 <i class="fa-regular fa-calendar text-2xl text-[#1C2E4A]"></i>
                 <h1 class="text-2xl font-semibold text-[#1C2E4A]">Prenez rendez-vous</h1>
@@ -147,14 +159,14 @@
 
     <div class=" bg-[#1C2E4A] text-white pb-20 ">
         <div class="grid grid-cols-1 md:grid-cols-2 w-full px-10 md:pt-20 p-8  md:pb-22 gap-6">
-            <div class="">
+            <div class="reveal">
                 <h3 class="text-[#C8A75A] font-bold pb-6">_____  Nos experts</h3>
-                <h1 class="text-5xl">Les acteurs de la <br> <span class=" text-[#C8A75A]">justice,</span><br>
+                <h1 class="text-4xl md:text-white">Les acteurs de la <br> <span class=" text-[#C8A75A]">justice,</span><br>
                     réunis.
                 </h1>
             </div>
             <div>
-                <p class="md:pt-16 pt-6 text-gray-300">
+                <p class="reveal md:pt-16 pt-6 text-gray-300">
                     YoonLink rassemble l'ensemble des professionnels du droit, chacun vérifié auprès des registres officiels et évalué par notre communauté.
 
                 </p>
@@ -164,7 +176,7 @@
         <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 px-15 gap-10    ">
 
 
-            <div class="border-t-8 border-[#C8A75A]  bg-white p-6 flex flex-col gap-6  hover:bg-[#f2f2f2] transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-102">
+            <div class="reveal border-t-8 border-[#C8A75A]  bg-white p-6 flex flex-col gap-6  hover:bg-[#f2f2f2] transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-102">
                 <i class="fa-solid fa-scale-balanced text-[#C8A75A] text-4xl"></i>
                 <p class="text-[#C8A75A]">Conseil & Défense</p>
                 <h1 class="text-[#1C2E4A] font-semibold text-4xl">Avocat</h1>
@@ -174,23 +186,28 @@
                     <span class="border border-[#C8A75A] bg-[#f5f2e6] text px-3 py-1">Civil</span>
                     <span class="border border-[#C8A75A] bg-[#f5f2e6] text px-3 py-1">Affaires</span><br><br>
                     <span class="border border-[#C8A75A] bg-[#f5f2e6] text px-3 py-1">Famille</span>
+
+                    <button class="border border-[#C8A75A] ml-40 w-10 h-7 size-6 hover:bg-[#C8A75A] hover:text-white animate-bounce "><a href=""><i class="fa-solid fa-arrow-right text-2xl"></i></a></button>
                 </div>
 
                 
 
             </div>
 
-            <div class="border-t-8 border-[#C8A75A]  bg-white p-6 flex flex-col gap-6  hover:bg-[#f2f2f2] transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-102">
+            <div class="reveal border-t-8 border-[#C8A75A]  bg-white p-6 flex flex-col gap-6  hover:bg-[#f2f2f2] transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-102">
                 <i class="fa-regular fa-file-lines text-[#C8A75A] text-5xl"></i>
                 <p class="text-[#C8A75A]">Authentification & Succession</p>
                 <h1 class="text-[#1C2E4A] font-semibold text-4xl">NOTAIRE</h1>
                 <p class="text-[#1C2E4A]">Officier public pour la rédaction d'actes authentiques : ventes immobilières, testaments, successions, contrats de mariage.</p>
 
                 <div class="text-[#C8A75A]">
-                    <span class="border border-[#C8A75A] bg-[#f5f2e6] text px-3 py-1">Pénal</span>
-                    <span class="border border-[#C8A75A] bg-[#f5f2e6] text px-3 py-1">Civil</span>
-                    <span class="border border-[#C8A75A] bg-[#f5f2e6] text px-3 py-1">Affaires</span><br><br>
-                    <span class="border border-[#C8A75A] bg-[#f5f2e6] text px-3 py-1">Famille</span>
+                     <span class="border border-[#C8A75A] bg-[#f5f2e6] text px-3 py-1">Immobilier</span>
+                    <span class="border border-[#C8A75A] bg-[#f5f2e6] text px-3 py-1">Succession</span><br><br>
+                    <span class="border border-[#C8A75A] bg-[#f5f2e6] text px-3 py-1">Mariage</span>
+
+                    <button class="border border-[#C8A75A] ml-40 w-10 h-7 hover:bg-[#C8A75A] hover:text-white size-6 animate-bounce "><a href=""><i class="fa-solid fa-arrow-right text-2xl"></i></a></button>
+
+                    
                 </div>
 
                 
@@ -199,7 +216,7 @@
                
 
             </div>
-            <div class="border-t-8 border-[#C8A75A]  bg-white p-6 flex flex-col gap-6  hover:bg-[#f2f2f2] transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-102">
+            <div class="reveal border-t-8 border-[#C8A75A]  bg-white p-6 flex flex-col gap-6  hover:bg-[#f2f2f2] transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-102">
 
                 <i class="fa-regular fa-file-lines text-[#C8A75A] text-5xl"></i>
                 <p class="text-[#C8A75A]">Exécution & Constat</p>
@@ -207,10 +224,11 @@
                 <p class="text-[#1C2E4A]">Signification d'actes judiciaires, exécution des décisions de justice, constats légaux et recouvrement de créances.</p>
 
                 <div class="text-[#C8A75A]">
-                    <span class="border border-[#C8A75A] bg-[#f5f2e6] text px-3 py-1">Pénal</span>
-                    <span class="border border-[#C8A75A] bg-[#f5f2e6] text px-3 py-1">Civil</span>
-                    <span class="border border-[#C8A75A] bg-[#f5f2e6] text px-3 py-1">Affaires</span><br><br>
-                    <span class="border border-[#C8A75A] bg-[#f5f2e6] text px-3 py-1">Famille</span>
+                    <span class="border border-[#C8A75A] bg-[#f5f2e6] text px-3 py-1">Recouvrement</span>
+                    <span class="border border-[#C8A75A] bg-[#f5f2e6] text px-3 py-1">Constat</span><br><br>
+                    <span class="border border-[#C8A75A] bg-[#f5f2e6] text px-3 py-1">Signification</span>
+                    <button class="border border-[#C8A75A] ml-40 w-10 h-7 hover:bg-[#C8A75A] hover:text-white size-6 animate-bounce "><a href=""><i class="fa-solid fa-arrow-right text-2xl"></i></a></button>
+                    
                 </div>
                 
                 
@@ -225,9 +243,48 @@
 
 
 
+    <div class="pb-20">
+        <div class="grid grid-cols-1 md:grid-cols-2 w-full px-10 md:pt-26 p-8  md:pb-22 gap-6">
+            <div class="reveal">
+                <h3 class="text-[#1C2E4A] font-bold pb-6">_____  Pourquoi YoonLink</h3>
+                <h1 class="text-5xl">La technologie au service <br>de  <span class=" text-[#C8A75A]">votre droit.</span><br>
+                   
+                </h1>
+            </div>
+            <div>
+                
+            </div>
+        </div>
+
+        
+        </div>
+    </div>
+  
 
 
 
+
+
+
+    <script>
+  const revealElements = document.querySelectorAll('.reveal');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, index) => {
+      if (entry.isIntersecting) {
+        // petit délai en cascade pour les cartes (effet "stagger")
+        setTimeout(() => {
+          entry.target.classList.add('visible');
+        }, index * 150);
+        observer.unobserve(entry.target); // ne se déclenche qu'une fois
+      }
+    });
+  }, {
+    threshold: 0.15
+  });
+
+  revealElements.forEach(el => observer.observe(el));
+</script>
 
 
 </body>
