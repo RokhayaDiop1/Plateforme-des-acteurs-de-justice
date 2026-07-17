@@ -310,6 +310,9 @@
   .w-16 {
     width: calc(var(--spacing) * 16);
   }
+  .w-72 {
+    width: calc(var(--spacing) * 72);
+  }
   .w-96 {
     width: calc(var(--spacing) * 96);
   }
@@ -357,6 +360,9 @@
   }
   .flex-col {
     flex-direction: column;
+  }
+  .flex-row {
+    flex-direction: row;
   }
   .items-center {
     align-items: center;
@@ -1099,6 +1105,16 @@
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
+  .md\:flex-col {
+    @media (width >= 48rem) {
+      flex-direction: column;
+    }
+  }
+  .md\:gap-4 {
+    @media (width >= 48rem) {
+      gap: calc(var(--spacing) * 4);
+    }
+  }
   .md\:p-10 {
     @media (width >= 48rem) {
       padding: calc(var(--spacing) * 10);
@@ -1107,6 +1123,11 @@
   .md\:p-14 {
     @media (width >= 48rem) {
       padding: calc(var(--spacing) * 14);
+    }
+  }
+  .md\:px-5 {
+    @media (width >= 48rem) {
+      padding-inline: calc(var(--spacing) * 5);
     }
   }
   .md\:px-12 {
