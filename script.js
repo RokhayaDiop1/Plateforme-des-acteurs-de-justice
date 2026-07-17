@@ -88,3 +88,19 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+
+
+let maxBottom = 0, culprit = null;
+document.querySelectorAll('body *').forEach(el => {
+    const rect = el.getBoundingClientRect();
+    const bottom = rect.bottom + window.scrollY;
+    if (bottom > maxBottom) {
+        maxBottom = bottom;
+        culprit = el;
+    }
+});
+console.log('Élément le plus bas :', culprit);
+console.log('Ses classes :', culprit.className);
+console.log('Position bottom :', maxBottom);
+console.log('Hauteur du body :', document.body.scrollHeight);
