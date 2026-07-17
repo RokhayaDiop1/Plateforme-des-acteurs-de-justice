@@ -31,27 +31,31 @@
         </div>
         
         <div >
-            <ul class="hidden lg:flex lg:items-center lg:pl-6 justify-between gap-10 font-semibold">
+            <ul id="nav-menu"
+                class="hidden lg:flex flex-col lg:flex-row items-center gap-8
+                absolute lg:static top-20 left-0 w-full lg:w-auto
+                bg-white lg:bg-transparent shadow-lg lg:shadow-none
+                p-6 lg:p-0 ">
                 <li class="hover:text-[#C8A75A]">
-                    <a href="" >Comment ça marche</a>
+                    <a href="#ccm" >Comment ça marche</a>
                 </li>
                 <li class="hover:text-[#C8A75A]">
-                    <a href="" >Acteurs</a>
+                    <a href="#acteurs" >Acteurs</a>
                 </li>
                 <li class="hover:text-[#C8A75A]">
-                    <a href="">Fonctionnalités</a>
+                    <a href="#fonctionnalité">Fonctionnalités</a>
                 </li>
                 <li class="hover:text-[#C8A75A]" class="mr-20">
-                    <a href="">Contact</a>
+                    <a href="#contact">Contact</a>
                 </li>
                 <li class="">
-                    <a class="bg-[#1C2E4A] text-white font-bold px-8 py-2 text-center rounded-full hover:bg-[#C8A75A] " href="">Commencer</a>
+                    <a class="bg-[#1C2E4A] text-white font-bold px-8 py-2 text-center rounded-full hover:bg-[#C8A75A] " href="#Commencer">Commencer</a>
                 </li>
 
             </ul>
             
         </div>
-        <span class="block lg:hidden text-2xl "><i class="fa-solid fa-bars "></i></span>
+        <span id="menu-btn" class="block lg:hidden text-2xl cursor-pointer"><i class="fa-solid fa-bars "></i></span>
     </div>
 
 
@@ -76,7 +80,7 @@
                     Trouver mon Expert
                 </a>
 
-                <a href="" class="font-bold uppercase text-[14px] lg:text-[12px] text-[#1C2E4A] text-center border border-[#1C2E4A] px-4 lg:px-8 lg:py-4 py-4 hover:text-white hover:bg-[#1C2E4A] ransition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110" >
+                <a href="#ccm" class="font-bold uppercase text-[14px] lg:text-[12px] text-[#1C2E4A] text-center border border-[#1C2E4A] px-4 lg:px-8 lg:py-4 py-4 hover:text-white hover:bg-[#1C2E4A] ransition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110" >
                     Voir comment ca marche 
                     <i class="fa-solid fa-arrow-right"></i>
                 </a>
@@ -98,7 +102,7 @@
 
     
 
-    <div class="pb-20">
+    <div id="ccm" class="pb-20">
         <div class="grid grid-cols-1 md:grid-cols-2 w-full px-10 md:pt-26 p-8  md:pb-22 gap-6">
             <div class="reveal">
                 <h3 class="text-[#1C2E4A] font-bold pb-6">_____  Comment ça marche</h3>
@@ -107,7 +111,7 @@
                 </h1>
             </div>
             <div class="reveal">
-                <p class="md:pt-16 pt-6 text-gray-500">
+                <p class="md:pt-16 pt-6 text-gray-500 text-justify">
                     YoonLink simplifie l'accès à la justice en éliminant l'incertitude. Notre algorithme analyse votre situation et vous met en relation avec l'expert le plus adapté en quelques minutes.
 
                 </p>
@@ -121,7 +125,7 @@
                 <h1 class="text-6xl font-bold text-[#C8A75A] opacity-50 " >01</h1>
                 <i class="fa-regular fa-message text-2xl text-[#1C2E4A]"></i>
                 <h1 class="text-2xl font-semibold text-[#1C2E4A]">Décrivez votre situation</h1>
-                <p class="text-gray-600">Expliquez librement votre problème en français ou en wolof. Notre IA analyse et catégorise votre demande.</p>
+                <p class="text-gray-600 text-justify">Expliquez librement votre problème en français ou en wolof. Notre IA analyse et catégorise votre demande.</p>
 
             </div>
 
@@ -129,14 +133,14 @@
                 <h1 class="text-6xl font-bold text-[#C8A75A] opacity-50 " >02</h1>
                 <i class="fa-solid fa-magnifying-glass text-2xl text-[#1C2E4A]"></i>
                 <h1 class="text-2xl font-semibold text-[#1C2E4A]">Soyez orienté automatiquement</h1>
-                <p class="text-gray-600">YoonLink vous recommande le bon type d'expert (avocat, notaire, médiateur…) et les professionnels les mieux adaptés.</p>
+                <p class="text-gray-600 text-justify">YoonLink vous recommande le bon type d'expert (avocat, notaire, médiateur…) et les professionnels les mieux adaptés.</p>
 
             </div>
             <div class="reveal border border-[#C8A75A] shadow-xl/30 rounded-2xl p-6 flex flex-col gap-10  justify-center items-center hover:bg-[#f2f2f2] transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-102">
                 <h1 class="text-6xl font-bold text-[#C8A75A] opacity-50 " >03</h1>
                 <i class="fa-regular fa-calendar text-2xl text-[#1C2E4A]"></i>
                 <h1 class="text-2xl font-semibold text-[#1C2E4A]">Prenez rendez-vous</h1>
-                <p class="text-gray-600">Consultez les disponibilités, comparez les tarifs et réservez directement en ligne. Confirmation instantanée.</p>
+                <p class="text-gray-600 text-justify">Consultez les disponibilités, comparez les tarifs et réservez directement en ligne. Confirmation instantanée.</p>
 
             </div>
 
@@ -157,7 +161,7 @@
 
 
 
-    <div class=" bg-[#1C2E4A] text-white pb-20 ">
+    <div id="acteurs" class=" bg-[#1C2E4A] text-white pb-20 ">
         <div class="grid grid-cols-1 md:grid-cols-2 w-full px-10 md:pt-20 p-8  md:pb-22 gap-6">
             <div class="reveal">
                 <h3 class="text-[#C8A75A] font-bold pb-6">_____  Nos experts</h3>
@@ -166,7 +170,7 @@
                 </h1>
             </div>
             <div>
-                <p class="reveal md:pt-16 pt-6 text-gray-300">
+                <p class="reveal md:pt-16 pt-6 text-gray-300 text-justify">
                     YoonLink rassemble l'ensemble des professionnels du droit, chacun vérifié auprès des registres officiels et évalué par notre communauté.
 
                 </p>
@@ -180,7 +184,7 @@
                 <i class="fa-solid fa-scale-balanced text-[#C8A75A] text-4xl text-shadow-lg"></i>
                 <p class="text-[#C8A75A]">Conseil & Défense</p>
                 <h1 class="text-[#1C2E4A] font-semibold text-4xl">Avocat</h1>
-                <p class="text-[#1C2E4A]">Défense de vos intérêts en justice, rédaction de contrats, négociation et conseil juridique dans tous les domaines du droit</p>
+                <p class="text-[#1C2E4A] text-justify">Défense de vos intérêts en justice, rédaction de contrats, négociation et conseil juridique dans tous les domaines du droit</p>
                 <div class="text-[#C8A75A]">
                     <span class="border border-[#C8A75A] bg-[#f5f2e6] text px-3 py-1">Pénal</span>
                     <span class="border border-[#C8A75A] bg-[#f5f2e6] text px-3 py-1">Civil</span>
@@ -198,7 +202,7 @@
                 <i class="fa-regular fa-file-lines text-[#C8A75A] text-5xl"></i>
                 <p class="text-[#C8A75A]">Authentification & Succession</p>
                 <h1 class="text-[#1C2E4A] font-semibold text-4xl">Notaire</h1>
-                <p class="text-[#1C2E4A]">Officier public pour la rédaction d'actes authentiques : ventes immobilières, testaments, successions, contrats de mariage.</p>
+                <p class="text-[#1C2E4A] text-justify">Officier public pour la rédaction d'actes authentiques : ventes immobilières, testaments, successions, contrats de mariage.</p>
 
                 <div class="text-[#C8A75A]">
                      <span class="border border-[#C8A75A] bg-[#f5f2e6] text px-3 py-1">Immobilier</span>
@@ -222,7 +226,7 @@
                 <i class="fa-solid fa-gavel text-[#C8A75A] text-5xl"></i>
                 <p class="text-[#C8A75A]">Exécution & Constat</p>
                 <h1 class="text-[#1C2E4A] font-semibold text-4xl">Huissier</h1>
-                <p class="text-[#1C2E4A]">Signification d'actes judiciaires, exécution des décisions de justice, constats légaux et recouvrement de créances.</p>
+                <p class="text-[#1C2E4A] text-justify">Signification d'actes judiciaires, exécution des décisions de justice, constats légaux et recouvrement de créances.</p>
 
                 <div class="text-[#C8A75A]">
                     <span class="border border-[#C8A75A] bg-[#f5f2e6] text px-3 py-1">Recouvrement</span>
@@ -243,7 +247,7 @@
                 <i class="fa-solid fa-book-open text-[#C8A75A] text-5xl"></i>
                 <p class="text-[#C8A75A]">Exécution & Constat</p>
                 <h1 class="text-[#1C2E4A] font-semibold text-4xl">Juristes et Conseilers</h1>
-                <p class="text-[#1C2E4A]">Signification d'actes judiciaires, exécution des décisions de justice, constats légaux et recouvrement de créances.</p>
+                <p class="text-[#1C2E4A] text-justify">Signification d'actes judiciaires, exécution des décisions de justice, constats légaux et recouvrement de créances.</p>
 
                 <div class="text-[#C8A75A]">
                     <span class="border border-[#C8A75A] bg-[#f5f2e6] text px-3 py-1">Recouvrement</span>
@@ -281,7 +285,7 @@
     <!-- Section Pourquoi YoonLink-------------------------------------------------->
 
 
-    <div class="pb-20">
+    <div id="fonctionnalité" class="pb-20">
         <div class="grid grid-cols-1 md:grid-cols-2 w-full px-10 md:pt-26 p-8  md:pb-22 gap-6">
             <div class="reveal">
                 <h3 class="text-[#1C2E4A] font-bold pb-6">_____  Pourquoi YoonLink</h3>
@@ -302,7 +306,7 @@
                 <p class="text-[#C8A75A] text-2xl">01</p>
                 <div>
                     <h1 class="text-2xl text-[#1C2E4A]">Trouvez rapidement le bon professionnel</h1>
-                    <p class="text-gray-600">Décrivez simplement votre problème et YoonLink vous oriente vers l'acteur de justice le plus adapté à votre situation (avocat, notaire, huissier, juriste, etc.).</p>
+                    <p class="text-gray-600 text-justify">Décrivez simplement votre problème et YoonLink vous oriente vers l'acteur de justice le plus adapté à votre situation (avocat, notaire, huissier, juriste, etc.).</p>
 
                 </div>
                 
@@ -313,7 +317,7 @@
                 <p class="text-[#C8A75A] text-2xl">02</p>
                 <div>
                     <h1 class="text-2xl text-[#1C2E4A]">Gagnez du temps</h1>
-                    <p class="text-gray-600">Plus besoin de chercher pendant des heures ou de contacter plusieurs cabinets. En quelques clics, trouvez le professionnel qui correspond à votre besoin.</p>
+                    <p class="text-gray-600 text-justify">Plus besoin de chercher pendant des heures ou de contacter plusieurs cabinets. En quelques clics, trouvez le professionnel qui correspond à votre besoin.</p>
 
                 </div>
                 
@@ -324,7 +328,7 @@
                 <p class="text-[#C8A75A] text-2xl">03</p>
                 <div>
                     <h1 class="text-2xl text-[#1C2E4A]">Une orientation adaptée à votre situation</h1>
-                    <p class="text-gray-600">Chaque problème est différent. YoonLink analyse votre demande afin de vous proposer une orientation pertinente selon le domaine juridique concerné.</p>
+                    <p class="text-gray-600 text-justify">Chaque problème est différent. YoonLink analyse votre demande afin de vous proposer une orientation pertinente selon le domaine juridique concerné.</p>
 
                 </div>
                 
@@ -335,7 +339,7 @@
                 <p class="text-[#C8A75A] text-2xl">04</p>
                 <div>
                     <h1 class="text-2xl text-[#1C2E4A]">Un service accessible à tous</h1>
-                    <p class="text-gray-600">Que vous soyez un particulier, un étudiant ou un entrepreneur, YoonLink facilite l'accès aux services juridiques, même sans connaissances en droit.</p>
+                    <p class="text-gray-600 text-justify">Que vous soyez un particulier, un étudiant ou un entrepreneur, YoonLink facilite l'accès aux services juridiques, même sans connaissances en droit.</p>
 
                 </div>
                 
@@ -356,7 +360,7 @@
 
 
 
-     <div class="pb-20 bg-">
+    <div class="pb-20 bg-">
         <div class="grid grid-cols-1 md:grid-cols-2 w-full px-10 bg-white md:pt-26 p-8  md:pb-22 gap-6">
             <div class="reveal">
                 <h3 class="text-[#1C2E4A] font-bold pb-6">_____  Questions fréquantes</h3>
@@ -374,7 +378,7 @@
             
         </div>
 
-         <div id="faq" class="max-w-3xl mx-auto px-4">
+        <div id="faq" class="max-w-3xl mx-auto px-4">
                 
                 
                 <div class="space-y-4" id="faq-list">
@@ -440,7 +444,7 @@
                     </div>
                 
                 </div>
-            </div>
+        </div>
 
         
             
@@ -449,7 +453,7 @@
 
 
 
-    <div class="pb-20">
+    <div id="contact" class="pb-20">
         <div class="grid grid-cols-1 md:grid-cols-2 w-full px-10 bg-white md:pt-26 p-8  md:pb-22 gap-6">
             <div class="reveal">
                 <h3 class="text-[#1C2E4A] font-bold pb-6">_____  Rejoignez YoonLink</h3>
@@ -470,7 +474,7 @@
                 <h1 class="text-2xl text-[#C8A75A]">Vous êtes un acteur de justice ?</h1>
                 <p class="text-gray-300 text-justify pb-6">Vous êtes avocat, notaire, huissier, juriste ou conseiller juridique ? Rejoignez YoonLink et rendez vos services plus accessibles. Développez votre visibilité et entrez en contact avec des personnes qui recherchent votre expertise.</p>
             </div>
-            <div class="bg-white p-10 md:p-14">
+            <div class=" reveal bg-white p-10 md:p-14">
                 <h3 class="text-lg font-bold text-slate-900 mb-6">Formulaire de contact</h3>
     
                 <form class="space-y-4">
@@ -527,69 +531,59 @@
             
                     <button type="submit"
                         class="w-full bg-[#C8A75A] hover:bg-[#C8A75A] text-white font-semibold py-3.5 rounded-lg transition-colors flex items-center justify-center gap-2">
-                         Envoyer ma demande
+                        <i class="fa-regular fa-paper-plane"></i> Envoyer ma demande
                     </button>
                 </form>
             </div>    
       </div>
-          
 
+
+       
+       
       
-          
-        
     </div>
+
+
+
+    <div id="Commencer" class="relative overflow-hidden bg-[#1C2E4A] py-32 before:content-['YoonLink'] before:font-playfair before:absolute before:top-1/2 before:left-1/2 before:-translate-x-1/2 before:-translate-y-1/2 before:text-[22rem]  before:font-bold before:text-white/5 before:whitespace-nowrap before:select-none before:pointer-events-none before:z-0 text-center">
+
+        <div class="reveal" >
+            
+            <h1 class="text-8xl text-white font-playfair">Votre droit mérite<br> <span class=" text-[#C8A75A]">le meilleur.</span><br>       
+            </h1>
+            <p class="text-gray-400 pb-20">Décrivez votre problème et trouvez le bon professionnel en moins de 2 minutes.</p> 
+
+
+            <a href="" class = " bg-[#C8A75A] lg:text-[12px] text-[14px] px-4 lg:px-8 lg:py-4 py-4  font-bold text-white tracking-[0.20em] uppercase text-center  hover:bg-[#d7b979] transition ransition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110">
+                    Trouver mon Expert
+            </a>
+
+            <a href="" class="font-bold uppercase text-[14px] lg:text-[12px] text-white text-center   px-4 lg:px-8 lg:py-4 py-4  transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110" >
+                    Voir comment ca marche 
+                    <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+
+      </div>
+          
+
+    </div>
+     
   
   
 
-
+    <!-- section footer ----------------------------------------------------------------- -->
   
 
+    <div class="bg-[#1C2E4A]">
+
+    </div>
 
 
 
 
 
-    <script>
-  const revealElements = document.querySelectorAll('.reveal');
-
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry, index) => {
-      if (entry.isIntersecting) {
-        // petit délai en cascade pour les cartes (effet "stagger")
-        setTimeout(() => {
-          entry.target.classList.add('visible');
-        }, index * 150);
-        observer.unobserve(entry.target); // ne se déclenche qu'une fois
-      }
-    });
-  }, {
-    threshold: 0.15
-  });
-
-  revealElements.forEach(el => observer.observe(el));
-</script>
-
-
-<script>
-document.querySelectorAll('.faq-question').forEach(button => {
-  button.addEventListener('click', () => {
-    const item = button.closest('.faq-item');
-    const answer = item.querySelector('.faq-answer');
-    const icon = item.querySelector('.faq-icon');
-    const isOpen = answer.style.maxHeight && answer.style.maxHeight !== '0px';
- 
-    // Ferme tous les autres (comportement accordéon classique)
-    document.querySelectorAll('.faq-answer').forEach(a => a.style.maxHeight = '0px');
-    document.querySelectorAll('.faq-icon').forEach(i => i.style.transform = 'rotate(0deg)');
- 
-    if (!isOpen) {
-      answer.style.maxHeight = answer.scrollHeight + 'px';
-      icon.style.transform = 'rotate(180deg)';
-    }
-  });
-});
-</script>
-
+    <script src="script.js"></script>
 
 </body>
 </html>
