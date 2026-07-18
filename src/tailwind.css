@@ -691,6 +691,9 @@
   .pt-36 {
     padding-top: calc(var(--spacing) * 36);
   }
+  .pb-0 {
+    padding-bottom: 0;
+  }
   .pb-5 {
     padding-bottom: calc(var(--spacing) * 5);
   }
